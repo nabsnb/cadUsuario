@@ -7,7 +7,6 @@ const campoCep = document.getElementById("cep")
                     .then(response => {return response.json();})
                     .then(data => {
                         if(data.erro === "true") {return alert('CEP incorreto');};
-                        console.log(data);
                         document.getElementById("rua").value = data.logradouro;;
                         document.getElementById("bairro").value = data.bairro;;
                         document.getElementById("cidade").value = data.localidade;;
