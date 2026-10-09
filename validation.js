@@ -20,4 +20,5 @@ $("#formCadastro").submit(function(e){
     if(!/[$*&@#]/.test(senha)) return alert("A senha deve conter pelo menos um caractere especial: $ * & @ #");               
     if(cep === '') return alert("Digite um CEP");
     if(numero === '') return alert("Digite o número do imóvel");
+    alert("Cadastro validado com sucesso!");
 });
